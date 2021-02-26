@@ -1,0 +1,12 @@
+// letter converter
+    split("").map(letterIndexes)
+    change ea letter replaced by
+    letterIndex splitwords.map(index)
+    reconnect with join("")
+    push into arr?
+
+    function letterConverter(word) => {
+        let splitLetters = word.split("").map((letter) => {
+            
+        })
+    }
