@@ -18,13 +18,21 @@ describe("caesar()", () => {
         });
     });
     describe("CONVERSION", () => {
-        it("should shift correct number of positions", () => {
-            const expected ="abc";
-            const actual = caesar("xyz", 3)
+        it("should loop around end of alphabet", () => {
+            const expected ="abcxyz";
+            const actual = caesar("xyzabc", 3)
+        });
+        it("should loop around beginning of alphabet", () => {
+            const expected ="abc ghi";
+            const actual = caesar("xyz def", 3, false)
         });
         it("should shift correctly for negative numbers", () => {
             const expected="efg";
             const actual = caesar("hij", -3)
+        });
+        it("Should shift correctly for positive numbers", () => {
+            const actual = caesar("red car", 3);
+            expect(actual).to.eql("uhg fdu");
         });
         it("should keep spaces", () => {
             const expected="ab cd"
