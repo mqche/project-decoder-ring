@@ -1,7 +1,6 @@
 const caesar = require("../src/caesar");
 const expect = require("chai").expect;
 
-// Write your tests here!
 describe("caesar()", () => {
     describe("Should return false for shift:", () => {
         it("of 0", () => {

@@ -1,7 +1,6 @@
 const polybius = require("../src/polybius");
 const expect = require("chai").expect;
 
-// Write your tests here!
 describe("polybius()", () => {
     describe("Decode should return false:", () => {
         it("if total numbers is odd", () => {
